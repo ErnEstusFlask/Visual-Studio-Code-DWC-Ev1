@@ -1,9 +1,9 @@
 var aInt = new Array();
 for(var i=0;i<100;i++){
-    aInt[i]=parseInt(Math.random()*100);
+    aInt[i]=parseInt(Math.random()*100+1);
     
 }
-
+aInt.sort();
 var cont=0;
 document.write("<table border=1>");
 for(var i=0;i<10&&cont<100;i++){
