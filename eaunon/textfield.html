@@ -1,0 +1,66 @@
+<!Doctype html>
+<html lang="es"    >
+<head>
+    <meta charset="utf-8" />
+    <title>DAW</title>    
+    <link rel="stylesheet"  href="css/plantilla.css" />
+    
+</head>
+<body>
+    <header>
+        
+        <h2>Textfield</h2>
+        
+    </header>
+    <div id="extra">
+            <div id="content">
+                    <table>
+                        <td><label for="textfield"><input type="text" name="textfield" id="msg1"></label></td>
+                        <td><label for="textfield"><input type="text" name="textfield" id="msg2"></label></td>
+                    </table>
+                            
+
+            </div>
+    </div>
+
+    
+    <div id="ad">
+        publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>
+    </div>
+    
+    <footer>
+        <p>Ernesto Auñón Bernabeu<br>2ºDAW 7K 2018-2019</p>
+    </footer>
+    
+</body>
+<script>
+    var mensaje1=document.getElementById("msg1");
+    var mensaje2=document.getElementById("msg2");
+    var rand= Math.random();
+    rand= rand*100;
+    rand = Math.round(rand);
+    var cont=1;
+    if(rand==0){
+        rand++;
+    } 
+    var num = prompt("Adivina un número del 1 al 100 : ");
+    while((num!=rand)&&cont<100){
+        if(num>rand){
+            cont++;
+            mensaje1.value=(num+"| buscas uno mas bajo");
+            mensaje2.value=("Llevas "+(cont-1)+" intentos");
+            num = prompt("Vuelve a intentarlo: ");
+        }else if(num<rand){
+            cont++;
+            mensaje1.value=(+num+"| buscas uno mas alto");
+            mensaje2.value=("Llevas "+(cont-1)+" intentos");
+            num = prompt("Vuelve a intentarlo: ");
+        }
+    }
+    
+    mensaje1.value=("El numero correcto es: "+rand+"<br>" );
+    mensaje2.value=("");
+       
+    
+</script>
+</html>

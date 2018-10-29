@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="es"    >
+<head>
+    <meta charset="utf-8" />
+    <title>DAW</title>    
+    <link rel="stylesheet"  href="css/css.css" />
+    <script> 
+    var n1 = prompt("Introduce el numero 1");
+    if(isNaN(n1)){
+        document.writeln("No has introducido un numero");
+    }else{
+        var n2 = prompt("Introduce el numero 2");
+        if(isNaN(n2)){
+            document.writeln("No has introducido un numero");
+        }else{
+            var op = prompt("Que operacion deseas realizar").toLowerCase();
+            var res;
+            
+            if (op=="suma") {
+                res = parseInt(n1)+parseInt(n2);
+                document.writeln("La "+op+" de "+n1+" y "+n2+" es: "+res);
+            } else if (op=="resta") {
+                res = parseInt(n1)-parseInt(n2);
+                document.writeln("La "+op+" de "+n1+" y "+n2+" es: "+res);
+            } else if (op=="multiplicacion") {
+                res = parseInt(n1)*parseInt(n2);
+                document.writeln("La "+op+" de "+n1+" y "+n2+" es: "+res);
+            } else if (op=="division") {
+                res = parseInt(n1)/parseInt(n2);
+                document.writeln("La "+op+" de "+n1+" y "+n2+" es: "+res);
+            } else{
+                document.writeln("Datos de operacion erroneos");
+            }
+            
+        }
+    
+    }
+    
+    
+
+    
+    </script>
+   
+    
+</head>
+<body>
+    <header>
+     
+        
+    </header>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
