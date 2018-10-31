@@ -1,6 +1,6 @@
 var aInt = new Array();
 for(var i=0;i<100;i++){
-    aInt[i]=parseInt(Math.random()*100+1);
+    aInt[i]=parseInt(Math.random()*100);
     
 }
 aInt.sort();

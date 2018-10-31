@@ -341,38 +341,38 @@ divi.onclick = function(){
 equ.onclick = function(){
     if(lastPulsedSign==false){
         equl=(operation.value+txt.value);
-    var oper1;
-    var oper2;
-    var inst;
-    var checker;
-    var max=equl.length;
-    for(i=1;i<max;i++){
-        checker=equl.slice(i-1, i);
-        if(checker=="+"||checker=="-"||checker=="/"||checker=="*"){
-            oper1=equl.slice(0, i-1);
-            inst=equl[i-1];
-            oper2=equl.slice(i, max);
+        var oper1;
+        var oper2;
+        var inst;
+        var checker;
+        var max=equl.length;
+        for(i=1;i<max;i++){
+            checker=equl.slice(i-1, i);
+            if(checker=="+"||checker=="-"||checker=="/"||checker=="*"){
+                oper1=equl.slice(0, i-1);
+                inst=equl[i-1];
+                oper2=equl.slice(i, max);
+            }
         }
-    }
-    oper1=parseFloat(oper1);
-    oper2=parseFloat(oper2);
-    operation.value="";
-    if(inst=="+"){
-        txt.value= oper1+oper2;
-        lastPulsedNum=false;
-    }
-    if(inst=="-"){
-        txt.value= oper1-oper2;
-        lastPulsedNum=false;
-    }
-    if(inst=="*"){
-        txt.value= oper1*oper2;
-        lastPulsedNum=false;
-    }
-    if(inst=="/"){
-        txt.value= oper1/oper2;
-        lastPulsedNum=false;
-    }
+        oper1=parseFloat(oper1);
+        oper2=parseFloat(oper2);
+        operation.value="";
+        if(inst=="+"){
+            txt.value= oper1+oper2;
+            lastPulsedNum=false;
+        }
+        if(inst=="-"){
+            txt.value= oper1-oper2;
+            lastPulsedNum=false;
+        }
+        if(inst=="*"){
+            txt.value= oper1*oper2;
+            lastPulsedNum=false;
+        }
+        if(inst=="/"){
+            txt.value= oper1/oper2;
+            lastPulsedNum=false;
+        }
     }
     
 }
