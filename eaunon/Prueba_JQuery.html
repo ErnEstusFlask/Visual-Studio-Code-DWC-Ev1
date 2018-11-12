@@ -11,14 +11,31 @@
         <h2>Formulario JQuery</h2>
     </header>
         <div id="content">
-                <table>
+                <table id="tablaImg">
                         <tr>
-                            <td><input type="image" src="images/image1.jpg" value="1"  id="but1"></td>
-                            <td><input type="image" src="images/image2.jpg" value="1"  id="but2"></td>
+                            <td><input type="image" src="images/image1.jpg" id="but1" class="img"></td>
+                            <td><input type="image" src="images/image2.jpg" id="but2" class="img"></td>
                         </tr>
                         <tr>
-                            <td><input type="image" src="images/image3.gif" value="1"  id="but3"></td>
-                            <td><input type="image" src="images/image4.gif" value="1"  id="but4"></td>
+                            <td><input type="image" src="images/image3.gif" id="but3" class="img"></td>
+                            <td><input type="image" src="images/image4.gif" id="but4" class="img"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="link1"><a href="http://extrafabulouscomics.com/">EFC</a></td>
+                            <td class="link1"><a href="https://www.mrlovenstein.com/">MrLovenstein</a></td>
+                            <td><input type="button" id="butCom" value="Web-Comcis"></td>
+                        </tr>
+                        <tr>
+                            <td class="link2"><a href="https://deathsnacks.com/wf/">WF Alerts</a></td>
+                            <td class="link2"><a href="http://paletton.com/">Paletton</a></td>
+                            <td><input type="button" id="butTools" value="Herramientas"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" id="butCorr" value="Color"></td>
+                            <td><input type="button" id="butClear" value="Clear"></td>
+                            <td><input type="button" id="butTog" value="Toggle"></td>
                         </tr>
                     </table>
         </div>
