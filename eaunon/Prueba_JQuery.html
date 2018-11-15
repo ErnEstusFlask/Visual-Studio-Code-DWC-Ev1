@@ -1,54 +1,88 @@
 <!Doctype html>
-<html lang="es"    >
+<html lang="es">
+
 <head>
     <meta charset="utf-8" />
-    <title>DAW</title>    
-    <link rel="stylesheet"  href="css/JQuery_Prueba.css" />
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/JQuery_Prueba.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
         <h2>Formulario JQuery</h2>
     </header>
-        <div id="content">
-                <table id="tablaImg">
-                        <tr>
-                            <td><input type="image" src="images/image1.jpg" id="but1" class="img"></td>
-                            <td><input type="image" src="images/image2.jpg" id="but2" class="img"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="image" src="images/image3.gif" id="but3" class="img"></td>
-                            <td><input type="image" src="images/image4.gif" id="but4" class="img"></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td class="link1"><a href="http://extrafabulouscomics.com/">EFC</a></td>
-                            <td class="link1"><a href="https://www.mrlovenstein.com/">MrLovenstein</a></td>
-                            <td><input type="button" id="butCom" value="Web-Comcis"></td>
-                        </tr>
-                        <tr>
-                            <td class="link2"><a href="https://deathsnacks.com/wf/">WF Alerts</a></td>
-                            <td class="link2"><a href="http://paletton.com/">Paletton</a></td>
-                            <td><input type="button" id="butTools" value="Herramientas"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="button" id="butCorr" value="Color"></td>
-                            <td><input type="button" id="butClear" value="Clear"></td>
-                            <td><input type="button" id="butTog" value="Toggle"></td>
-                        </tr>
-                    </table>
-        </div>
-        <div id="pop_up">
-            POP-UP<input type="submit" value="x" id="close">
-        </div>
+    <div id="content">
+        <table id="tablaImg">
+            <tr>
+                <td><input type="image" src="images/image1.jpg" id="but1" class="img"></td>
+                <td><input type="image" src="images/image2.jpg" id="but2" class="img"></td>
+                <td><input type="image" src="images/image3.gif" id="but3" class="img"></td>
+                <td><input type="image" src="images/image4.gif" id="but4" class="img"></td>
+            </tr>
+        </table>
+        <br>
+        <table id="tableCl">
+            <tr>
+                <td class="link1"><a href="http://extrafabulouscomics.com/">EFC</a></td>
+                <td class="link1"><a href="https://www.mrlovenstein.com/">MrLovenstein</a></td>
+                <td><input type="button" id="butCom" value="Web-Comcis"></td>
+            </tr>
+            <tr>
+                <td class="link2"><a href="https://deathsnacks.com/wf/">WF Alerts</a></td>
+                <td class="link2"><a href="http://paletton.com/">Paletton</a></td>
+                <td><input type="button" id="butTools" value="Tools"></td>
+            </tr>
+            <tr>
+                <td class="link6"><a href="https://www.google.es/">Google</a></td>
+                <td class="link6"><a href="https://duckduckgo.com/">Duck Duck Go</a></td>
+                <td><input type="button" id="butBrow" value="Browsers"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="butCorr" value="Color"></td>
+                <td><input type="button" id="butClear" value="Clear"></td>
+                <td><input type="button" id="butTog" value="Toggle"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td class="link3"><a href="http://extrafabulouscomics.com/">EFC</a></td>
+                <td class="link3"><a href="https://www.mrlovenstein.com/">MrLovenstein</a></td>
+                <td><input type="radio" name="page" value="webC" id="radCom">Web-Comcis</td>
+            </tr>
+            <tr>
+                <td class="link4"><a href="https://deathsnacks.com/wf/">WF Alerts</a></td>
+                <td class="link4"><a href="http://paletton.com/">Paletton</a></td>
+                <td><input type="radio" name="page" value="webT" id="radTool">Tools</td>
+            </tr>
+            <tr>
+                <td class="link5"><a href="https://www.google.es/">Google</a></td>
+                <td class="link5"><a href="https://duckduckgo.com/">Duck Duck Go</a></td>
+                <td><input type="radio" name="page" value="webB" id="radBrow">Browsers</td>
+            </tr>
+        </table>
+        <br>
+        <table id="tableTar">
+            <tr>
+                <td>“We're all puppets, Laurie. I'm just a puppet who can see the strings.” </td>
+                <td>“Once you realize what a joke everything is, being the Comedian is the only thing that makes
+                    sense.” </td>
+                <td>“None of you understand. I'm not locked up in here with YOU. You're locked up in here with ME.”</td>
+            </tr>
+        </table>
+    </div>
+    <div id="pop_up">
+        POP-UP<input type="submit" value="x" id="close">
+    </div>
     <div id="ad">
         publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>publicidad<br>
     </div>
-    
+
     <footer>
         <p>Ernesto Auñón Bernabeu<br>2ºDAW 7K 2018-2019</p>
     </footer>
     <script src="js/JQuery_Prueba.js"></script>
 </body>
+
 </html>
