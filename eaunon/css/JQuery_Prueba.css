@@ -71,6 +71,19 @@ position: absolute;
 .resaltar{
     background-color: crimson;
 }
-#tableTar{
-    padding-right: 15px;
+
+#tableTar td{
+    border: crimson solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#tableTar th button{
+    width: auto;
+}
+.butText{
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    color: white; 
 }

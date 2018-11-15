@@ -83,22 +83,30 @@ $(document).ready(function () {
         $(".link3").removeClass("resaltar");
         $(".link4").removeClass("resaltar");
     }
-
     //Target
-    var imagenes = document.querySelectorAll("#tablaImg .img");
-    for (var i = 0; i < imagenes.length; i++) {
-        imagenes[i].addEventListener("click", comprar_articulo, false);
+    var botones = document.querySelectorAll("#tableTar td");
+    for (var i = 0; i < botones.length; i++) {
+        botones[i].addEventListener("click", cambia_tamano, false);
     }
 
-    function comprar_articulo(param) {
-        if (param.target.id == "but1") {
-            $("#but1").replaceWith("<img src='images/sold.gif'>");
-        } else if (param.target.id == "but2") {
-            $("#but2").replaceWith("<img src='images/sold.gif'>");
-        } else if (param.target.id == "but3") {
-            $("#but3").replaceWith("<img src='images/sold.gif'>");
-        } else if (param.target.id == "but4") {
-            $("#but4").replaceWith("<img src='images/sold.gif'>");
+    function cambia_tamano(param) {
+
+        alert("funciona");
+        var defaultSize;
+        defaultSize = parseInt(defaultSize);
+        alert("funciona");
+        if (param.target.id == "butAmp1") {
+            $("#text1").css({ "font-size": "200%" });
+        } else if (param.target.id == "butRed1") {
+            $("#text1").replaceWith("<img src='images/sold.gif'>");
+        } else if (param.target.id == "butAmp2") {
+            $("#text2").replaceWith("<img src='images/sold.gif'>");
+        } else if (param.target.id == "butRed2") {
+            $("#text2").replaceWith("<img src='images/sold.gif'>");
+        } else if (param.target.id == "butAmp3") {
+            $("#text3").replaceWith("<img src='images/sold.gif'>");
+        } else if (param.target.id == "butRed3") {
+            $("#text3").replaceWith("<img src='images/sold.gif'>");
         }
     }
 
