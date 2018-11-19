@@ -84,29 +84,31 @@ $(document).ready(function () {
         $(".link4").removeClass("resaltar");
     }
     //Target
-    var botones = document.querySelectorAll("#tableTar td");
+    var botones = document.querySelectorAll("#tableTar th");
     for (var i = 0; i < botones.length; i++) {
         botones[i].addEventListener("click", cambia_tamano, false);
     }
 
     function cambia_tamano(param) {
+        var currentSize1 = $("#text1").css("font-size");
+        var currentSize2 = $("#text2").css("font-size");
+        var currentSize3 = $("#text3").css("font-size");
 
-        alert("funciona");
-        var defaultSize;
-        defaultSize = parseInt(defaultSize);
-        alert("funciona");
+        currentSize1 = parseInt(currentSize1);
+        currentSize2 = parseInt(currentSize2);
+        currentSize3 = parseInt(currentSize3);
         if (param.target.id == "butAmp1") {
-            $("#text1").css({ "font-size": "200%" });
+            $("#text1").css({ "font-size": currentSize1 + 2 });
         } else if (param.target.id == "butRed1") {
-            $("#text1").replaceWith("<img src='images/sold.gif'>");
+            $("#text1").css({ "font-size": currentSize1 - 2 });
         } else if (param.target.id == "butAmp2") {
-            $("#text2").replaceWith("<img src='images/sold.gif'>");
+            $("#text2").css({ "font-size": currentSize2 + 2 });
         } else if (param.target.id == "butRed2") {
-            $("#text2").replaceWith("<img src='images/sold.gif'>");
+            $("#text2").css({ "font-size": currentSize2 - 2 });
         } else if (param.target.id == "butAmp3") {
-            $("#text3").replaceWith("<img src='images/sold.gif'>");
+            $("#text3").css({ "font-size": currentSize3 + 2 });
         } else if (param.target.id == "butRed3") {
-            $("#text3").replaceWith("<img src='images/sold.gif'>");
+            $("#text3").css({ "font-size": currentSize3 - 2 });
         }
     }
 
