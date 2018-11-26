@@ -125,10 +125,11 @@ $(document).ready(function () {
     .before() inserta antes del elemento seleccionado
     .after() inserta despues del elemento seleccionado
     .remove() elimina
-    .remplaceWith() cambia el contenido por lo de dentro de los parentesis
+    .replaceWith() cambia el contenido por lo de dentro de los parentesis
     .addClass() añade el nombre de una clase
     .removeClass() elimina una clase del elemento
     .toggleClass() 
+    .attr("atributo",valor del atributo a cambiar) 
     */
 
 });
