@@ -57,9 +57,12 @@ h2{
     color: white;
 }
 img{
-    height: 125px;
+    height: 140px;
     padding: 5px;
 }
 input{
     height: auto;
+}
+.hide{
+    display: none;
 }
